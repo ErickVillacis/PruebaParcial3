@@ -1,0 +1,77 @@
+# Tipos de datos (entidades)
+type Account {
+    id: ID!
+    username: String!
+    email: String!
+    password: String!
+}
+
+type Project {
+    id: ID!
+    name: String!
+    description: String
+    status: String!
+}
+
+type Task {
+    id: ID!
+    project: Project!
+    name: String!
+    description: String
+    status: String!
+}
+
+type Employee {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String!
+}
+
+type Assignment {
+    id: ID!
+    task: Task!
+    employee: Employee!
+    time: Int!
+}
+
+# Consultas
+type Query {
+    getAccountById(id: ID!): Account
+    getAllAccounts: [Account]
+
+    getProjectById(id: ID!): Project
+    getAllProjects: [Project]
+
+    getTaskById(id: ID!): Task
+    getAllTasks: [Task]
+
+    getEmployeeById(id: ID!): Employee
+    getAllEmployees: [Employee]
+
+    getAssignmentById(id: ID!): Assignment
+    getAllAssignments: [Assignment]
+}
+
+# Mutaciones
+type Mutation {
+    createAccount(username: String!, email: String!, password: String!): Account
+    updateAccount(id: ID!, username: String, email: String, password: String): Account
+    deleteAccount(id: ID!): String
+
+    createProject(name: String!, description: String, status: String!): Project
+    updateProject(id: ID!, name: String, description: String, status: String): Project
+    deleteProject(id: ID!): String
+
+    createTask(projectId: ID!, name: String!, description: String, status: String!): Task
+    updateTask(id: ID!, projectId: ID, name: String, description: String, status: String): Task
+    deleteTask(id: ID!): String
+
+    createEmployee(name: String!, email: String!, phone: String!): Employee
+    updateEmployee(id: ID!, name: String, email: String, phone: String): Employee
+    deleteEmployee(id: ID!): String
+
+    createAssignment(taskId: ID!, employeeId: ID!, time: Int!): Assignment
+    updateAssignment(id: ID!, taskId: ID, employeeId: ID, time: Int): Assignment
+    deleteAssignment(id: ID!): String
+}

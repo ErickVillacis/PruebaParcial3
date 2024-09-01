@@ -1,0 +1,54 @@
+INSERT INTO account (username, email, password) VALUES ('john_doe', 'john@example.com', 'password123');
+INSERT INTO account (username, email, password) VALUES ('jane_smith', 'jane@example.com', 'password456');
+INSERT INTO account (username, email, password) VALUES ('michael_brown', 'michael@example.com', 'password789');
+INSERT INTO account (username, email, password) VALUES ('emily_jones', 'emily@example.com', 'password101');
+INSERT INTO account (username, email, password) VALUES ('william_taylor', 'william@example.com', 'password202');
+INSERT INTO account (username, email, password) VALUES ('sophia_martin', 'sophia@example.com', 'password303');
+INSERT INTO account (username, email, password) VALUES ('oliver_anderson', 'oliver@example.com', 'password404');
+INSERT INTO account (username, email, password) VALUES ('ava_thomas', 'ava@example.com', 'password505');
+INSERT INTO account (username, email, password) VALUES ('isabella_jackson', 'isabella@example.com', 'password606');
+INSERT INTO account (username, email, password) VALUES ('liam_white', 'liam@example.com', 'password707');
+
+INSERT INTO project (name, description, status) VALUES ('Project Alpha', 'Initial phase of the alpha project.', 'Active');
+INSERT INTO project (name, description, status) VALUES ('Project Beta', 'Development of beta features.', 'Active');
+INSERT INTO project (name, description, status) VALUES ('Project Gamma', 'Testing phase of gamma project.', 'Completed');
+INSERT INTO project (name, description, status) VALUES ('Project Delta', 'Delta project planning and research.', 'Cancelled');
+INSERT INTO project (name, description, status) VALUES ('Project Epsilon', 'Epsilon project implementation.', 'Active');
+INSERT INTO project (name, description, status) VALUES ('Project Zeta', 'Zeta project final review.', 'Completed');
+INSERT INTO project (name, description, status) VALUES ('Project Eta', 'Preliminary study of Eta project.', 'Active');
+INSERT INTO project (name, description, status) VALUES ('Project Theta', 'Theta project documentation.', 'Completed');
+INSERT INTO project (name, description, status) VALUES ('Project Iota', 'Iota project resources allocation.', 'Cancelled');
+INSERT INTO project (name, description, status) VALUES ('Project Kappa', 'Initial discussions on Kappa project.', 'Active');
+
+INSERT INTO task (project_id, name, description, status) VALUES (1, 'Design Mockups', 'Create design mockups for UI.', 'Pending');
+INSERT INTO task (project_id, name, description, status) VALUES (1, 'Develop Backend', 'Implement backend services.', 'In Progress');
+INSERT INTO task (project_id, name, description, status) VALUES (2, 'Unit Testing', 'Write unit tests for core modules.', 'Completed');
+INSERT INTO task (project_id, name, description, status) VALUES (2, 'Deploy to Staging', 'Deploy the application to staging.', 'Pending');
+INSERT INTO task (project_id, name, description, status) VALUES (3, 'User Acceptance Testing', 'Coordinate UAT with stakeholders.', 'In Progress');
+INSERT INTO task (project_id, name, description, status) VALUES (4, 'Research Alternatives', 'Research alternative technologies.', 'Completed');
+INSERT INTO task (project_id, name, description, status) VALUES (5, 'Setup CI/CD Pipeline', 'Setup continuous integration and delivery pipeline.', 'In Progress');
+INSERT INTO task (project_id, name, description, status) VALUES (6, 'Final Review', 'Conduct a final review before launch.', 'Completed');
+INSERT INTO task (project_id, name, description, status) VALUES (7, 'Documentation', 'Document all APIs and services.', 'Pending');
+INSERT INTO task (project_id, name, description, status) VALUES (8, 'Resource Allocation', 'Allocate resources for project.', 'Completed');
+
+INSERT INTO employee (name, email, phone) VALUES ('Alice Johnson', 'alice@example.com', '555-0101');
+INSERT INTO employee (name, email, phone) VALUES ('Bob Wilson', 'bob@example.com', '555-0102');
+INSERT INTO employee (name, email, phone) VALUES ('Charlie Lee', 'charlie@example.com', '555-0103');
+INSERT INTO employee (name, email, phone) VALUES ('David Brown', 'david@example.com', '555-0104');
+INSERT INTO employee (name, email, phone) VALUES ('Eve Davis', 'eve@example.com', '555-0105');
+INSERT INTO employee (name, email, phone) VALUES ('Frank Miller', 'frank@example.com', '555-0106');
+INSERT INTO employee (name, email, phone) VALUES ('Grace Taylor', 'grace@example.com', '555-0107');
+INSERT INTO employee (name, email, phone) VALUES ('Hank Anderson', 'hank@example.com', '555-0108');
+INSERT INTO employee (name, email, phone) VALUES ('Ivy Thomas', 'ivy@example.com', '555-0109');
+INSERT INTO employee (name, email, phone) VALUES ('Jack White', 'jack@example.com', '555-0110');
+
+INSERT INTO assignment (task_id, employee_id, time) VALUES (1, 1, 5);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (2, 2, 8);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (3, 3, 4);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (4, 4, 7);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (5, 5, 10);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (6, 6, 6);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (7, 7, 3);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (8, 8, 9);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (9, 9, 2);
+INSERT INTO assignment (task_id, employee_id, time) VALUES (10, 10, 8);
