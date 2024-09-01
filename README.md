@@ -7,7 +7,7 @@ David Cunguan
 Maria Jose Meneses
 
 Erick Villacis
-
+<br><br>
 Para ejecutar el proyecto seguir las instrucciones:
 
 1.- Descargar la carpeta vimecu, este es el back de la aplicacion
