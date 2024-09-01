@@ -1,6 +1,6 @@
 # PruebaParcial3
 
-#Realizado por:
+# Realizado por:
 David Cunguan
 Maria Jose Meneses
 Erick Villacis
