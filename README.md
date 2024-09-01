@@ -17,8 +17,7 @@ Para ejecutar el proyecto seguir las instrucciones:
 3.- Dirigirse a application.yml y modificar el nombre de la base de datos, usuario y contraseña a los deseados. 
 
 IMPORTANTE: las base de datos debe existir y ser de postgres, no hace falta crear tablas u otros elementos
-
-
+<br><br>
 4.- Descargar la carpeta Front_conjunta que es el front de la aplicacion
 
 5.- Abrir la carpeta con VSCode o en una terminal
